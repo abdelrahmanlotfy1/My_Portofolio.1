@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: rgb(43, 43, 206);
+    --secondary-color: rgb(217, 7, 214);
+}
+
+header {
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    position: fixed;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(8, 8, 155);
+    text-decoration: none;
+}
+
+header .navigation a {
+    text-decoration: none;
+    padding-left: 35px;
+    font-size: 1.1rem;
+    color: rgb(17, 4, 126);
+    transition: 500ms;
+    font-weight: 500;
+    
+}
+
+header .navigation a:hover {
+    color: rgb(217, 7, 214);
+}
+
+/* Main Section */
+.main {
+    padding: 200px 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main .text {
+    flex: 1;
+    color: white;
+}
+
+.main .text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.main .text .hi {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 250px;
+}
+
+.main .text p {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.main .text .and {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 20px;
+}
+
+.main .text .btn {
+    display: inline-block;
+    border: 3px solid var(--primary-color);
+    background-color: var(--primary-color);
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    transition: .75s ease;
+}
+
+.main .text .btn:hover {
+    background-color: rgb(16, 16, 160);
+    transform: scale(1.1);
+}
+
+.main .text .social_icons {
+    padding-top: 18px;
+    padding: 12px 0 5px 5px;
+}
+
+.main .text .social_icons a {
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+    padding-right: 44px;
+}
+
+.main .image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main .image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Services Section */
+.title {
+    padding: 100px 120px;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding: 0 120px 100px 120px;
+    margin: 0 auto;
+}
+
+.content .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    flex: 1;
+    text-align: center;
+}
+
+.content .card:hover {
+    transform: scale(1.1);
+}
+
+.content .card .banner {
+    color: var(--primary-color);
+    font-size: 5rem;
+    padding: 10px 15px;
+}
+
+.content .card .text {
+    padding: 13px 20px;
+}
+
+.content .card .text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: rgb(43, 43, 206);
+}
+
+.content .card .text p {
+    font-size: 1rem;
+    color: rgb(80, 80, 80);
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+/* Projects Section */
+.Projects {
+    background-color: black;
+}
+
+.Projects .content {
+    margin-top: 30px;
+}
+
+.Projects .content .p-card {
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    margin: 20px;
+    overflow: hidden;
+    width: 23em;
+    border-radius: 10px;
+    transition: transform 0.8s ease;
+}
+
+.Projects .content .p-card:hover {
+    transform: scale(1.1);
+}
+
+.Projects .content .p-card .image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.Projects .content .p-card .image img:hover {
+    opacity: .9;
+}
+
+.Projects .content .p-card .p-text {
+    padding: 10px;
+    text-align: center;
+}
+
+.Projects .content .p-card .p-text .project_title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Projects .content .p-card .p-text p {
+    font-size: 1.25rem;
+    color: rgb(43, 43, 206);
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 3px;
+}
+
+.Projects .content .p-card .p-text span {
+    font-size: 1rem;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.Projects .content .p-card .p-text a {
+    display: block;
+    margin-top: 4px;
+    text-decoration: none;
+    color: rgb(25, 0, 255);
+    padding: 4px 15px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.Projects .content .p-card .p-text a:hover {
+    color: rgb(217, 7, 214);
+}
+
+.Projects .title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    padding: 0 120px 100px 120px;
+    margin: 0 auto;
+}
+
+.contact .content .c-card {
+    box-shadow: 0 4px 8px 0 rgba(39, 23, 143, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    pointer-events: auto !important;
+    padding: 20px;
+}
+
+.contact .content .c-card:hover {
+    transform: scale(1.1);
+}
+
+.contact .content .c-card .c-logo i {
+    color: rgb(43, 43, 206) !important;
+    font-size: 5rem;
+    padding: 10px 15px 5px 15px;
+}
+
+.contact .content .c-card .c-text {
+    padding: 0px 20px 9px 20px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.contact .content .c-card .c-text p {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contact .content .c-card .c-text span {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .ftext {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+
+footer .ftext span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+footer .ftext .footer-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer .ftext .ficons {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .ftext .ficons a {
+    color: white;
+    margin: 0px 14px;
+}
+
+/* ============================================
+   MEDIA QUERIES FOR RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet - Large (1024px and below) */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 20px 60px;
+    }
+
+    .main {
+        padding: 150px 40px;
+    }
+
+    .main .text .hi {
+        margin-top: 150px;
+    }
+
+    .main .text p {
+        font-size: 2.5rem;
+    }
+
+    .main .text .and {
+        font-size: 2.5rem;
+    }
+
+    .main .image img {
+        max-width: 350px;
+    }
+
+    .title {
+        padding: 80px 60px;
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 0 60px 80px 60px;
+        gap: 30px;
+    }
+
+    .contact .content {
+        padding: 0 60px 80px 60px;
+        gap: 50px;
+    }
+
+    footer .ftext {
+        padding: 0 60px;
+    }
+}
+
+/* Tablet - Small (768px and below) */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    header .navigation a {
+        padding-left: 15px;
+        font-size: 0.95rem;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        padding: 120px 30px 80px;
+        text-align: center;
+    }
+
+    .main .text .hi {
+        margin-top: 30px;
+        font-size: 1.3rem;
+    }
+
+    .main .text p {
+        font-size: 2rem;
+    }
+
+    .main .text .and {
+        font-size: 2rem;
+    }
+
+    .main .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .main .text .social_icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .main .text .social_icons a {
+        padding-right: 0;
+        font-size: 22px;
+    }
+
+    .main .image {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .main .image img {
+        max-width: 300px;
+    }
+
+    .title {
+        padding: 60px 30px;
+        font-size: 1.8rem;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 0 30px 60px 30px;
+        gap: 30px;
+    }
+
+    .content .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .Projects .content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Projects .content .p-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact .content {
+        flex-direction: column;
+        padding: 0 30px 60px 30px;
+        gap: 30px;
+    }
+
+    .contact .content .c-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    footer .ftext {
+        flex-direction: column;
+        padding: 0 30px;
+        gap: 15px;
+    }
+
+    footer .ftext .ficons {
+        padding: 10px 0;
+    }
+}
+
+/* Mobile - Large (480px and below) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    header .logo {
+        font-size: 1.3rem;
+    }
+
+    header .navigation a {
+        padding-left: 10px;
+        font-size: 0.85rem;
+    }
+
+    .main {
+        padding: 100px 20px 60px;
+    }
+
+    .main .text .hi {
+        font-size: 1.1rem;
+    }
+
+    .main .text p {
+        font-size: 1.5rem;
+    }
+
+    .main .text .and {
+        font-size: 1.5rem;
+    }
+
+    .main .text h2 {
+        font-size: 1.2rem;
+    }
+
+    .main .text .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .main .text .social_icons a {
+        font-size: 20px;
+    }
+
+    .main .image img {
+        max-width: 250px;
+    }
+
+    .title {
+        padding: 50px 20px;
+        font-size: 1.5rem;
+    }
+
+    .content {
+        padding: 0 20px 50px 20px;
+        gap: 20px;
+    }
+
+    .content .card .banner {
+        font-size: 4rem;
+    }
+
+    .content .card .text h2 {
+        font-size: 1.3rem;
+    }
+
+    .content .card .text p {
+        font-size: 0.9rem;
+    }
+
+    .Projects .content .p-card {
+        margin: 15px;
+        width: 100%;
+    }
+
+    .Projects .content .p-card .p-text p {
+        font-size: 1.1rem;
+    }
+
+    .Projects .content .p-card .p-text span {
+        font-size: 0.9rem;
+    }
+
+    .contact .content {
+        padding: 0 20px 50px 20px;
+    }
+
+    .contact .content .c-card .c-logo i {
+        font-size: 4rem;
+    }
+
+    .contact .content .c-card .c-text p {
+        font-size: 1.3rem;
+    }
+
+    .contact .content .c-card .c-text span {
+        font-size: 0.85rem;
+        word-break: break-all;
+    }
+
+    footer .ftext {
+        padding: 0 20px;
+    }
+
+    footer .ftext .footer-title {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    footer .ftext .ficons a {
+        margin: 0px 8px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile - Extra Small (360px and below) */
+@media screen and (max-width: 360px) {
+    header .logo {
+        font-size: 1.1rem;
+    }
+
+    header .navigation a {
+        padding-left: 8px;
+        font-size: 0.75rem;
+    }
+
+    .main .text p {
+        font-size: 1.3rem;
+    }
+
+    .main .text .and {
+        font-size: 1.3rem;
+    }
+
+    .title {
+        font-size: 1.3rem;
+        padding: 40px 15px;
+    }
+
+    .content .card .banner {
+        font-size: 3.5rem;
+    }
+
+    .contact .content .c-card .c-logo i {
+        font-size: 3.5rem;
+    }
+}
