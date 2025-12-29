@@ -194,6 +194,10 @@ header .navigation a:hover {
 
 .Projects .content {
     margin-top: 30px;
+    display: flex;             /* تأكيد إنه فليكس */
+    flex-wrap: wrap;           /* ده السطر اللي هيحل المشكلة: يسمح بنزول العناصر لسطر جديد */
+    justify-content: center;   /* عشان يوسطن الكروت في نص الشاشة */
+    gap: 20px;                 /* مسافة بين الكروت وبعضها */
 }
 
 .Projects .content .p-card {
@@ -593,7 +597,7 @@ footer .ftext .ficons a {
 
     .Projects .content .p-card {
         margin: 15px;
-        margin-left:10px;
+        margin-left: 10px;
         width: 100%;
     }
 
@@ -668,6 +672,4 @@ footer .ftext .ficons a {
     .contact .content .c-card .c-logo i {
         font-size: 3.5rem;
     }
-
 }
-
