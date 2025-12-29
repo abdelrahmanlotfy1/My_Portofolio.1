@@ -593,7 +593,7 @@ footer .ftext .ficons a {
 
     .Projects .content .p-card {
         margin: 15px;
-        margin-left:-20px;
+        margin-left:10px;
         width: 100%;
     }
 
@@ -670,3 +670,4 @@ footer .ftext .ficons a {
     }
 
 }
+
